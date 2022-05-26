@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+/* Core styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #262f38;
+  font-size: 16px;
+}
+
+body {
+  background-color: #739ca2;
+}
+
+a {
+  text-decoration: none;
+  color: #262f38;
+}
+
+input {
+  background: transparent;
+}
+
+input:focus {
+  outline: 2px solid #262f38a6;
+  border-radius: 10px;
+}
+
+::placeholder {
+  color: #262f38;
+  font-weight: 300;
+}
+
+/* Validation */
+
+.succes {
+  color: rgb(93, 190, 93);
+  font-size: 14px;
+}
+
+.red {
+  color: rgb(214, 100, 100);
+  font-size: 14px;
+}
+
+/* Main Styles */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt {
+  margin: 20px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+.card-body {
+  width: 450px;
+  max-width: 450px;
+  background-color: #fafafa;
+  width: 100%;
+  padding: 50px 50px;
+  border-radius: 10px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+  -moz-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+  box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.input-box {
+  margin: 25px 0;
+  font-weight: 450;
+}
+
+.input-box input {
+  display: block;
+  padding: 0 30px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #ebf3f5;
+}
+
+.input-box span {
+  display: inline-block;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-send {
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #262f38;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.021);
+  cursor: pointer;
+}
+
+.button-send:hover {
+  opacity: 0.95;
+}
+
+.buttons a {
+  padding: 0 30px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  .button-send {
+    width: 100%; 
+    text-align: center;
+    margin: 0;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .buttons a {
+    margin-top: 20px;
+  }
+}

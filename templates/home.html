@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Test
+{% endblock title %}
+
+
+
+
+{% block content %}
+	<h1>Assalawma aleykum!</h1> {{ request.user.username }} {{ request.user.last_name }} {{ request.user.first_name }} |  <a href="{% url 'logout' %}">shigiw</a> <a href="/quiz">Testler</a> | <a href="{% url 'home' %}">Bas bet</a>
+{% endblock content %}

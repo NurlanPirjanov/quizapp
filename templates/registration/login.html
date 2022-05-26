@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiriw</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="wrapper mt100">
+    <div class="card-body">
+      <div class="title">Kiriw</div>
+      <form method="post">
+        {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input name="username" maxlength="50" type="text" placeholder="Logininizdi kiritiń" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Parol</span>
+            <input name="password" type="password" placeholder="Paroldi kiritiń" required>
+          </div>
+          <div class="buttons">
+            <button class="button-send">Kiriw</button>
+            <a href="./signUp.html">Dizimnen ótiw</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
